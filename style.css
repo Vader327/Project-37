@@ -1,12 +1,74 @@
 html, body {
-    margin: 0;
-    padding: 0;
-  }
-  canvas{
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 100px;
-    border: 2px solid black;
-  }
+  margin: 0;
+  padding: 0;
+}
+
+canvas{
+  padding: 0;
+  margin: auto;
+  display: block;
+  border: 2px solid black;
+  border: solid #f79533;
+  border-radius: 2em;
+  border-width: 0.2cm;
+  -webkit-animation: border_gradient 5s ease alternate infinite;
+}
+
+#clear_button{
+  font-family: 'Quicksand';
+  font-weight: 600;
+  font-size: 25px;
+  width: 6cm;
+  height: 1.5cm;
+  background: transparent;
+  border: solid #f79533;
+  border-width: 0.1cm;
+  border-radius: 1.5em;
+  -webkit-animation: border_gradient_button 5s ease alternate infinite;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+#clear_button:hover{
+  transform: scale(1.1);
+  outline: none;
+}
+
+#slider{
+  width: 200px;
+  transform: scale(2);
+}
+
+#values{
+  font-family: 'Quicksand';
+  font-weight: 600;
+  font-size: 25px;
+}
+
+#color_picker{
+  background: transparent;
+  border: none;
+  width: 70px;
+  height: 40px;
+  outline: none;
+}
   
+@-webkit-keyframes border_gradient {
+  0%{border: solid #f37055;border-width: 0.2cm;}
+  10%{border: solid #ef4e7b;border-width: 0.2cm;}
+  20%{border: solid #a166ab;border-width: 0.2cm;}
+  30%{border: solid #5073b8;border-width: 0.2cm;}
+  40%{border: solid #1098ad;border-width: 0.2cm;}
+  50%{border: solid #07b39b;border-width: 0.2cm;}
+  60%{border: solid #6fba82;border-width: 0.2cm;}
+}
+
+@-webkit-keyframes border_gradient_button {
+  0%{border: solid #f37055;border-width: 0.1cm;}
+  10%{border: solid #ef4e7b;border-width: 0.1cm;}
+  20%{border: solid #a166ab;border-width: 0.1cm;}
+  30%{border: solid #5073b8;border-width: 0.1cm;}
+  40%{border: solid #1098ad;border-width: 0.1cm;}
+  50%{border: solid #07b39b;border-width: 0.1cm;}
+  60%{border: solid #6fba82;border-width: 0.1cm;}
+}
   
