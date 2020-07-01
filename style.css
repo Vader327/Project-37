@@ -4,9 +4,6 @@ html, body {
 }
 
 canvas{
-  padding: 0;
-  margin: auto;
-  display: block;
   border: 2px solid black;
   border: solid #f79533;
   border-radius: 2em;
@@ -50,6 +47,48 @@ canvas{
   width: 70px;
   height: 40px;
   outline: none;
+}
+
+#change_backround{
+  font-family: 'Quicksand';
+  font-weight: 600;
+  font-size: 20px;
+  width: 6cm;
+  height: 1cm;
+  background: transparent;
+  border: solid #f79533;
+  border-width: 0.1cm;
+  border-radius: 1.5em;
+  -webkit-animation: border_gradient_button 5s ease alternate infinite;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+#change_backround:hover{
+  transform: scale(1.1);
+  outline: none;
+}
+
+#paint_button{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid rgb(0, 153, 255);
+  outline: none;
+  background: white;
+  transition: all 0.5s ease-in-out;
+}
+#paint_button:hover{
+  background-color: rgb(0, 153, 255);
+  transition: background-color 0.5s ease-in-out;
+}
+#selected{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid rgb(0, 153, 255);
+  outline: none;
+  background: rgb(0, 153, 255);
+  transition: all 0.5s ease-in-out;
 }
   
 @-webkit-keyframes border_gradient {
